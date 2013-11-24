@@ -3,7 +3,7 @@
 <h1 class="stolen-h1">
 	Save Your Lesson
 </h1>
-	
+
 	<%= simple_form_for @pic do |f| %>
 		<br/>
 		<%= f.input :lesson, label: 'What was the lesson?', placeholder: 'Enter the lesson number' %>
@@ -13,7 +13,7 @@
 		<%= f.input :emotion, label: 'How did you feel?', placeholder: 'Stoked, Jazzed, Super' %>
 		<br/>
 		<%= f.input :learned, label: 'What did you learn?', placeholder: 'HTML, CSS, Rails, GitHub, Ruby' %>
-	
+		<br/>
 		<%= submit_tag 'save', :class => 'btn'%>
 
 	<% end %>
