@@ -7,13 +7,19 @@
 			</h1>
 			<br />
 			<h2>
+				<%= link_to pic_path(pic) do %>
 				<%= image_tag pic.image %>
+			<% end %>
 			</h2>
+			
 			<br />
+			
 			<h2>
 				Emotion: <%= pic.emotion %>
 			</h2>
+			
 			<br />
+			
 			<h2>
 				Learned: <%= pic.learned %>
 			</h2>
